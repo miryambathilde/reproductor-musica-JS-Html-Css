@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+	background: linear-gradient(to right, #c50a68e8 , #0a7b97d5);
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	width: 50%;
+	margin: 15px auto;
+	padding: 20px;
+	text-align: center;
+	min-height: 50vh;
+}
+
+#playList{
+	background: white;
+	border-radius: 10px;
+	text-align: left;
+	opacity: 0.8;
+	color: #db0f72;
+	
+}
+
+li{
+	padding: 10px;
+}
+
+li:hover, svg:hover {
+	cursor: pointer;
+	color: #e84393;
+}
+
+li.active{
+	color: #770952;
+	font-weight: 600;
+}
+
+#controls{
+	border: 1px #eee solid;
+	border-radius: 10px;
+	padding: 10px;
+	background: white;
+	opacity: 0.8
+}
+ 
+svg {
+	color: #cc0dac;
+}
+ 
+progress{
+	width: 80%;
+	margin: 10px;
+	opacity: 0.5;
+ 
+}
+ 
+.timer {
+	width:50%;
+	position: relative;
+	top:10px;
+	left:0px;
+	text-align:left;
+	float:left;
+	color: #e618a1;
+	font-weight: 600;
+}
+.volumen{
+	width:50%;
+	position: relative;
+	top:10px;
+	right:0px;
+	text-align:right;
+	float:left;
+	color: #0d4b9c;
+	margin-bottom:20px;
+}
+#currentPlay{
+	color: #5e094b;
+	font-weight: 600;
+}
+  
+h3{
+	color: #e84393;
+	margin:0px;
+}
+
+p {
+	color: white;
+}
+
+p a {
+	color: white;
+}
+
+p a:hover {
+	color: #ffffff;
+	font-weight: 600;
+}

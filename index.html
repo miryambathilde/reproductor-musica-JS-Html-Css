@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reproductor de música JavaScript</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- FONTAWESOME -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+<audio id="player" ontimeupdate="updateProgress();">
+<source id="source"> 
+Audio no soportado 
+</audio>
+<div id="controls">
+<div class="timer" id="timer">
+&nbsp;
+</div>
+<div class="volumen">
+Vol: 
+<i class="fas fa-volume-down"></i> 
+<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+<i class="fas fa-volume-up"></i>
+</div>
+<i class="fas fa-backward fa-5x" onclick="prevMusic();"></i>
+<i class="far fa-play-circle fa-5x" onclick="togglePlay();" id="iconPlay"></i> 
+<i class="fas fa-forward fa-5x" onclick="nextMusic();"></i>
+<br>
+<span id="currentPlay"></span><br>
+<progress id="progress" value="0" max="100" ></progress>
+<h3>Mi música</h3>
+<div id="playList"></div>
+ 
+</div>
+</div>
+<p>Música cedida por <a href="https://www.bensound.com/">Bensound</a></p>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
